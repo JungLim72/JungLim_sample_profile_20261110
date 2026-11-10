@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="임정의 디지털 마케팅 포트폴리오. Meta 광고, 자사몰 A/B 테스트, 콘텐츠 운영 사례.">
+<title>임정 | 디지털 마케팅 포트폴리오</title>
+<style>
+:root{color-scheme:light;--ink:#182237;--muted:#505d70;--paper:#f7f7f1;--accent:#d8f574;--line:#d7ddd9;--blue:#263eaa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,"Malgun Gothic",sans-serif;word-break:keep-all}
+a{color:inherit;text-underline-offset:.24em}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #6579e0;outline-offset:5px}
+.wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+.skip{position:absolute;left:1rem;top:-5rem;background:white;padding:.5rem;z-index:1}.skip:focus{top:1rem}
+.header,.footer,nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.header{min-height:74px;border-bottom:1px solid var(--line)}nav a,.brand{text-decoration:none}.brand{font-weight:900;letter-spacing:.1em}.brand span,h1 span{color:var(--blue)}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding-block:clamp(3.5rem,9vw,8rem)}
+.eyebrow,.tag{font-size:.76rem;letter-spacing:.13em;font-weight:800;margin:0 0 .8rem}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.7rem,7vw,5.4rem);letter-spacing:-.075em;line-height:1.1;margin-bottom:1.4rem}
+.intro,.section-note,.about p:not(.eyebrow){color:var(--muted);max-width:34rem}
+.button{display:inline-flex;gap:1rem;margin-top:1rem;padding:.75rem 1rem;background:var(--accent);font-weight:800;text-decoration:none}
+.score{background:var(--ink);color:white;padding:clamp(1.5rem,4vw,3rem);border-radius:.4rem}
+.score .eyebrow,.score strong{color:var(--accent)}.score div{display:grid;padding-block:1rem;border-top:1px solid #516078}.score strong{font-size:clamp(2.5rem,6vw,4rem);line-height:1.15;letter-spacing:-.07em}.score span{margin-top:.35rem}
+.work{background:#edf0e6}.work,.about,.contact{padding-block:clamp(3rem,7vw,6rem)}
+h2{font-size:clamp(2rem,5vw,3.25rem);line-height:1.15;letter-spacing:-.065em;margin-bottom:1rem}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:2rem;align-items:start}
+article{background:#fff;border:1px solid var(--line);padding:clamp(1.3rem,3vw,2rem);border-radius:.4rem}
+.tag,.result{color:var(--blue)}h3{font-size:1.25rem;line-height:1.45;margin-bottom:.8rem}
+.result{font-size:1.9rem;font-weight:850;margin-bottom:1rem}.result small{font-size:.83rem;color:var(--muted);font-weight:650}
+details{border-top:1px solid var(--line);padding-top:.8rem}summary{cursor:pointer;font-weight:700}details p{margin:.7rem 0;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:2rem}.about h2 span{font-size:1rem;letter-spacing:0;color:var(--muted)}dl{margin:0}dl div{padding:.65rem 0;border-bottom:1px solid var(--line)}dt{font-weight:800}dd{margin:0;color:var(--muted)}
+.contact{background:var(--ink);color:white}.contact .eyebrow{color:var(--accent)}.email{display:inline-block;font-size:clamp(1rem,4vw,1.55rem);margin-right:.7rem;overflow-wrap:anywhere}.contact button{background:var(--accent);color:var(--ink);border:0;padding:.5rem .7rem;cursor:pointer;font:inherit;font-weight:700}#copy-status{min-height:1.65em;margin:.6rem 0 0}.footer{min-height:72px;font-size:.8rem}
+@media(max-width:680px){.wrap{width:calc(100% - 32px)}.hero,.about,.cards{grid-template-columns:1fr}.hero{gap:2rem}nav{gap:.7rem;font-size:.88rem}.header{gap:.5rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Performance portfolio: a light brief paired with a violet results panel. */
+:root{--paper:#faf9fd;--ink:#211b33;--muted:#575068;--accent:#e9ddff;--line:#ddd6e9;--blue:#55308a}
+.hero{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(1.75rem,5vw,4.5rem)}
+.hero h1{font-size:clamp(2.15rem,5vw,4.25rem);line-height:1.2}
+.eyebrow,.tag{letter-spacing:.035em}
+.score{background:#ebe1fa;color:var(--ink);border-radius:1.35rem 1.35rem 1.35rem .2rem}
+.score .eyebrow,.score strong{color:#4d277a}
+.score div{border-color:#cbb7e2}
+.work{background:#f0ecf6}
+.cards{align-items:stretch}
+.cards article{border-radius:.75rem}
+.cards article:nth-child(-n+2){border-top:3px solid #7650a7}
+@media(max-width:680px){.hero{grid-template-columns:1fr}}
+
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<header class="wrap header"><a class="brand" href="#main">IM JUNG<span>.</span></a><nav aria-label="주 메뉴"><a href="#work">프로젝트</a><a href="#about">소개</a><a href="#contact">연락</a></nav></header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="title">
+<div><p class="eyebrow">퍼포먼스 마케팅 포트폴리오</p><h1 id="title">광고 성과를 읽고,<br>다음 실험을 설계합니다.</h1><p class="intro">안녕하세요, 임정입니다. 고객 리뷰와 광고 데이터를 읽고, 그 결과를 새로운 소재와 자사몰 실험에 반영합니다.</p><a class="button" href="#work">프로젝트 보기 <span aria-hidden="true">↘</span></a></div>
+<aside class="score" aria-label="대표 프로젝트 성과"><p class="eyebrow">킬로리 협업 성과</p><div><strong>0 → 7</strong><span>Meta 광고 소재 개선 후 구매 건수</span></div><div><strong>+51%</strong><span>콘누들 상세페이지 조회 개선율</span></div></aside>
+</section>
+<section class="work" id="work"><div class="wrap"><h2>프로젝트</h2><p class="section-note">청년취업사관학교 SeSAC 디지털 마케터 과정에서 진행한 킬로리 협업 프로젝트입니다.</p>
+<div class="cards">
+<article><p class="tag">01 / META ADS</p><h3>구매 상위 릴스를 분석해 광고 소재 개선</h3><p class="result">0 → 7건 <small>구매 건수</small></p><details><summary>프로젝트 자세히 보기</summary><p>이미지 1건과 릴스 2건을 제작·발행했습니다. 구매수가 높은 릴스 3건의 도입부와 썸네일을 분석해 구매가 발생하지 않았던 개인 소재의 편집에 반영했습니다.</p></details></article>
+<article><p class="tag">02 / A/B TEST</p><h3>콘누들 썸네일을 바꿔 상세페이지 조회 개선</h3><p class="result">+51% <small>상세페이지 조회 개선율</small></p><details><summary>프로젝트 자세히 보기</summary><p>자사몰 기존 제품의 상세페이지 조회를 늘리기 위해 썸네일 교체 A/B 테스트를 기획하고 실행했습니다. 조회 개선율을 주요 결과로 정리했습니다.</p></details></article>
+<article><p class="tag">03 / SOCIAL CONTENT</p><h3>제품 활용 레시피로 인스타그램 채널 운영</h3><p class="result">630명 <small>운영 1개월 팔로워</small></p><details><summary>프로젝트 자세히 보기</summary><p>30대 다이어터를 타깃으로 계정을 개설하고, 제품을 활용한 레시피 릴스 3건과 캐러셀 8건을 제작했습니다.</p><a href="https://www.instagram.com/sso.meals/">브랜드 인스타그램 보기 ↗</a></details></article>
+<article><p class="tag">04 / CUSTOMER INSIGHT</p><h3>자사몰 리뷰를 분석해 상세페이지 제작</h3><p class="result">385건 <small>분석한 고객 리뷰</small></p><details><summary>프로젝트 자세히 보기</summary><p>AI를 활용해 리뷰에서 자주 언급된 표현을 분류했습니다. 맛과 식감에 관한 반응, ‘속세맛’ 같은 고객 표현을 바탕으로 제품의 핵심 소구점을 정리하고 상세페이지를 디자인했습니다.</p></details></article>
+</div></div></section>
+<section id="about" class="wrap about"><div><h2>임정 <span>Im Jung</span></h2><p>광고 소재를 만들고, 반응을 확인하고, 다음 버전에 반영하는 일에 관심이 있습니다.</p></div><dl><div><dt>마케팅 실무 과정</dt><dd>SeSAC 디지털 마케터 과정 · 2026.06–09</dd></div><div><dt>유관 경험</dt><dd>인플루언서 클라이언트 매출 관리 및 CS · 2024.04–07<br>FAQ 매뉴얼 정리로 평균 응답시간 40분 → 15분</dd></div><div><dt>학력</dt><dd>경희대학교 호스피탈리티경영학과 · 2027.02 졸업 예정</dd></div><div><dt>영어</dt><dd>TOEIC 875 · OPIc IH</dd></div></dl></section>
+<section id="contact" class="contact"><div class="wrap"><h2>연락하기</h2><a class="email" href="mailto:lclucky61@gmail.com">lclucky61@gmail.com</a><button id="copy" type="button" hidden>이메일 복사</button><p id="copy-status" role="status"></p></div></section>
+</main>
+<footer class="wrap footer"><span>IM JUNG · PORTFOLIO</span><a href="#main">맨 위로 ↑</a></footer>
+<script>
+const copyButton = document.querySelector('#copy');
+const copyStatus = document.querySelector('#copy-status');
+const email = document.querySelector('.email');
+
+if (navigator.clipboard?.writeText) {
+  copyButton.hidden = false;
+  copyButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(email.textContent.trim());
+      copyStatus.textContent = '이메일 주소를 복사했어요.';
+    } catch {
+      copyStatus.textContent = '이메일 주소를 선택해 직접 복사해 주세요.';
+    }
+  });
+}
+
+</script>
+</body></html>
+
+
